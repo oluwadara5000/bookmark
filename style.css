@@ -179,7 +179,7 @@ margin-bottom: 80px;
   padding: 25px 40px;
 }
 
-.features-container div{
+.features-container-div{
   display: flex;
   align-items: center;
   justify-content: space-between;
