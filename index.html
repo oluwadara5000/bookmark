@@ -164,37 +164,63 @@
     </div>
 
     <div class="fourth-div">
-      <div>
+      <div class="fourth-div-content">
         <h1>Frequently Asked Questions</h1>
         <p>Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.</p>
       </div>
 
-      <div>
-        <div>
-          <h1>What is Bookmark?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+      <div class="collapsible-container">
+        <div class="collapsible">
+          <div>
+            <h1>What is Bookmark?</h1>
+            <div class="collapsible-icons">
+              <i id="bookmark-icon-show" class="fa-solid fa-angle-down"></i>
+              <i id="bookmark-icon-close" class="fa-sharp fa-solid fa-angle-up"></i>
+            </div>
+          </div>
+          <p id="bookmark-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
         </div>
 
-        <div>
-          <h1>How can I request a new browser?</h1>
-          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+        <div class="collapsible">
+          <div>
+            <h1>How can I request a new browser?</h1>
+            <div class="collapsible-icons">
+              <i id="browser-icon-show" class="fa-solid fa-angle-down"></i>
+              <i id="browser-icon-close" class="fa-sharp fa-solid fa-angle-up"></i>
+            </div>
+          </div>
+          <p id="browser-p">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
             Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
             Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
         </div>
 
-        <div>
-          <h1>Is there a mobile app?</h1>
-          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+        <div class="collapsible">
+          <div>
+            <h1>Is there a mobile app?</h1>
+            <div class="collapsible-icons">
+              <i id="app-icon-show" class="fa-solid fa-angle-down"></i>
+              <i id="app-icon-close" class="fa-sharp fa-solid fa-angle-up"></i>
+            </div>
+          </div>
+          <p id="app-p">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+            condimentum
             urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
             sollicitudin ex et ultricies bibendum.</p>
         </div>
 
-        <div>
-          <h1>What about other Chromium browsers?</h1>
-          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+        <div class="collapsible">
+          <div>
+            <h1>What about other Chromium browsers?</h1>
+            <div class="collapsible-icons">
+              <i id="chromium-icon-show" class="fa-solid fa-angle-down"></i>
+              <i id="chromium-icon-close" class="fa-sharp fa-solid fa-angle-up"></i>
+            </div>
+          </div>
+          <p id="chromium-p">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+            Aliquam
             vitae neque eget nisl gravida pellentesque non ut velit.</p>
         </div>
       </div>
@@ -202,28 +228,30 @@
     </div>
 
     <div class="fifth-div">
-      <p>35,000+ already joined</p>
+      <p>35,000+ ALREADY JOINED</p>
       <h1>Stay up-to-date with what we’re doing</h1>
       <div>
         <form action="">
-          <input type="email" name="" id="">
+          <input type="email" name="" id="" placeholder="Enter your email address">
         </form>
         <button>Contact Us</button>
       </div>
     </div>
 
     <footer>
-      <div>
-        <img src="/images/footer-logo.png" alt="">
+      <div class="logo-list-container">
+        <div>
+          <img src="/images/footer-logo.png" alt="">
+        </div>
+        <div>
+          <ul>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div>
+      <div class="footer-icons">
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
       </div>
@@ -239,12 +267,5 @@
 
   <script src="script.js"></script>
 </body>
-
-<div class="test">
-  <div class="one"></div>
-  <div class="two"></div>
-  <div class="three"></div>
-  <div class="four"></div>
-</div>
 
 </html>

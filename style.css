@@ -8,36 +8,6 @@
   font-family: Rubik;
 }
 
-.test{
-  display: flex;
-  height: 500px;
-  width: 100%;
-}
-
-.one{
-  background-color: hsl(231, 69%, 60%);
-  height: 300px;
-  width: 20%;
-}
-
-.two{
-  background-color: hsl(0, 94%, 66%);
-  height: 300px;
-  width: 20%;
-}
-
-.three{
-  background-color: hsl(229, 8%, 60%);
-  height: 300px;
-  width: 20%;
-}
-
-.four{
-  background-color: hsl(229, 31%, 21%);
-  height: 300px;
-  width: 20%;
-}
-
 section{
   width: 1440px;
   background-color: #ffffff;
@@ -289,12 +259,26 @@ margin: auto;
   display: flex;
   justify-content: center;
   gap: 30px;
+  height: 450px;
+  margin-bottom: 160px;
 }
 
 .third-div-card-container{
-box-shadow: 5px 5px 25px rgb(233, 229, 229);
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
+box-shadow: 5px 25px 25px rgb(233, 229, 229);
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+
+.third-div-card-container:nth-child(1){
+  align-self: flex-start;
+}
+
+.third-div-card-container:nth-child(2){
+  align-self: center;
+}
+
+.third-div-card-container:nth-child(3){
+align-self: flex-end;
 }
 
 .third-div-card{
@@ -323,8 +307,10 @@ border-bottom-right-radius: 10px;
 }
 
 .third-div-card hr{
+  margin: auto;
   margin-bottom: 30px;
   border: 2px dashed hsl(229, 8%, 60%);
+  width: 90%;
 }
 
 .third-div-card button{
@@ -338,10 +324,169 @@ padding: 17px;
 border-radius: 5px;
 }
 
+.fourth-div{
+text-align: center;
+}
 
-/* TRYING TO ALIGN THE BROWSWER DIVS */
+.fourth-div-content{
+  text-align: center;
+width: 35.3%;
+margin: auto;
+}
 
+.fourth-div-content h1{
+  color: hsl(229, 31%, 21%);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
 
+.fourth-div-content p{
+  line-height: 25px;
+  color: hsl(229, 8%, 60%);
+  margin-bottom: 30px;
+  font-size: 17px;
+  margin-bottom: 45px;
+}
 
+.collapsible-container{
+  width: 550px;
+  margin: auto;
+}
 
+.collapsible:nth-child(4){
+border-bottom: 1px solid hsl(229, 8%, 60%);
+}
 
+.collapsible{
+  border-top: 1px solid hsl(229, 8%, 60%);
+  padding: 20px 0;
+  position: relative;
+}
+
+.collapsible div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible i{
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.fa-angle-up{
+color: hsl(0, 94%, 66%);
+font-size: 22px;
+}
+
+.fa-angle-down{
+  color: hsl(231, 69%, 60%);
+  font-size: 22px;
+}
+
+.collapsible h1{
+  color: hsl(229, 31%, 21%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.collapsible p{
+  display: none;
+  line-height: 35px;
+  margin-top: 30px;
+  color: hsl(229, 8%, 60%);
+}
+
+.fourth-div button{
+  margin-top: 55px;
+  margin-bottom: 150px;
+  background-color: hsl(231, 69%, 60%);
+  padding: 14px 27px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.fifth-div{
+  text-align: center;
+  background-color: hsl(231, 69%, 60%);
+  padding: 70px 0;
+}
+
+.fifth-div p{
+  font-size: 14px;
+  letter-spacing: 7px;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.fifth-div h1{
+  width: 445px;
+  margin: auto;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
+.fifth-div div{
+  display: flex;
+  justify-content: space-between;
+  width: 445px;
+  margin: auto;
+}
+
+form{
+width: 68%;
+}
+
+input{
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+.fifth-div button{
+  width: 28%;
+  border-radius: 7px;
+  background-color: hsl(0, 94%, 66%);
+  color: #ffffff;
+  border: none;
+}
+
+footer{
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  padding: 25px 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer ul{
+  display: flex;
+  gap: 45px;
+}
+
+footer ul li{
+  list-style-type: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.logo-list-container{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer-icons{
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  gap: 40px;
+}
