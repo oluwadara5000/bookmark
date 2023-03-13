@@ -8,17 +8,17 @@
   font-family: Rubik;
 }
 
+html, body{
+  background-color: #000000;
+  width: 100%;
+}
+
 section{
   width: 1440px;
   background-color: #ffffff;
   margin: auto;
   cursor: pointer;
   padding-top: 50px;
-}
-
-html, body{
-  background-color: #000000;
-  width: 100%;
 }
 
 header{
@@ -32,6 +32,10 @@ header{
 .nav-list{
   display: flex;
   gap: 50px;
+}
+
+.nav-list i{
+  display: none;
 }
 
 header ul{
@@ -163,6 +167,10 @@ margin-bottom: 80px;
   padding: 0 175px;
   position: relative;
   margin-bottom: 250px;
+}
+
+.second-div-tab-mobile{
+  display: none;
 }
 
 .second-div-nav{
@@ -516,7 +524,148 @@ footer ul li{
 /* MEDIA QUERIES */
 /* FOR SCREENS 374px and BELOW */
 @media screen and (max-width: 374px) {
+section{
+  width: 100%;
 }
+
+header{
+padding: 0 30px;
+}
+
+header ul{
+  display: none;
+}
+
+header button{
+  display: none;
+}
+
+.nav-list i{
+  display: block;
+}
+
+.first-div{
+  flex-direction: column-reverse;
+  padding: 0;
+  gap: 30px;
+}
+
+.first-div-content{
+  width: 100%;
+  text-align: center;
+  padding: 0 45px;
+}
+
+.first-div h1{
+  font-size: 25px;
+}
+
+.first-div p{
+  font-size: 14px;
+}
+
+.first-div-button{
+  justify-content: center;
+}
+
+.first-div-button button{
+  padding: 14px 20px;
+}
+
+.first-div-image{
+  width: 100%;
+}
+
+.first-div-image img{
+  width: inherit;
+}
+
+.background{
+  width: 290px;
+  height: 200px;
+  top: 60px;
+}
+
+.second-div-content{
+  width: 100%;
+  padding: 0 35px;
+}
+
+.second-div-content h1{
+  font-size: 25px;
+}
+
+.second-div-content p{
+font-size: 15px;
+}
+
+.second-div-tab{
+  display: none;
+}
+
+.second-div-tab-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.second-div-nav-mobile{
+  text-align: center;
+  padding: 0 30px;
+}
+
+.second-div-nav-mobile ul{
+width: inherit;
+}
+
+.second-div-nav-mobile ul > li{
+  padding: 20px 0;
+  list-style-type: none;
+  width: max-content;
+  margin: auto;
+}
+
+.second-div-nav-mobile ul > li:hover{
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+
+.features-container-div-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.features-container-mobile{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.features-container-writeup-mobile{
+  text-align: center;
+}
+
+.features-container-div-image-mobile{
+  width: 100%;
+}
+
+.features-container-div-image-mobile img{
+  width: inherit;
+}
+
+.features-container-writeup-mobile h1{
+  margin-bottom: 15px;
+  color: hsl(229, 31%, 21%);
+}
+
+.features-container-writeup-mobile p{
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(229, 8%, 60%);
+  line-height: 25px;
+}
+}
+
+/* FINISHED FEATURES TAB IN SECOND DIV FOR FIRST MEDIA QUERY. TIME FOR THIRD DIV */
 
 
 /*  */

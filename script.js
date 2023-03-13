@@ -23,9 +23,22 @@ const browserParagraph = document.getElementById("browser-p");
 const appParagraph = document.getElementById("app-p");
 const chromiumParagraph = document.getElementById("chromium-p");
 
+
+const clickMobile = document.getElementById("click-mobile");
+const searchMobile = document.getElementById("search-mobile");
+const shareMobile = document.getElementById("share-mobile");
+
+
+const showClickMobile = document.getElementById("show-click-mobile");
+const showSearchMobile = document.getElementById("show-search-mobile");
+const showShareMobile = document.getElementById("show-share-mobile");
+
 showClick.classList.add("add-border");
+showClickMobile.classList.add("add-border");
 search.style.display = "none";
+searchMobile.style.display = "none";
 share.style.display = "none";
+shareMobile.style.display = "none";
 hideBookmark.style.display = "none";
 hideBrowser.style.display = "none";
 hideApp.style.display = "none";
@@ -58,6 +71,35 @@ showShare.addEventListener("click", function () {
   showClick.classList.remove("add-border");
   showSearch.classList.remove("add-border");
   showShare.classList.add("add-border");
+});
+
+
+
+showClickMobile.addEventListener("click", function () {
+  searchMobile.style.display = "none";
+  shareMobile.style.display = "none";
+  clickMobile.style.display = "flex";
+  showClickMobile.classList.add("add-border");
+  showSearchMobile.classList.remove("add-border");
+  showShareMobile.classList.remove("add-border");
+});
+
+showSearchMobile.addEventListener("click", function () {
+  searchMobile.style.display = "flex";
+  shareMobile.style.display = "none";
+  clickMobile.style.display = "none";
+  showClickMobile.classList.remove("add-border");
+  showSearchMobile.classList.add("add-border");
+  showShareMobile.classList.remove("add-border");
+});
+
+showShareMobile.addEventListener("click", function () {
+  searchMobile.style.display = "none";
+  shareMobile.style.display = "flex";
+  clickMobile.style.display = "none";
+  showClickMobile.classList.remove("add-border");
+  showSearchMobile.classList.remove("add-border");
+  showShareMobile.classList.add("add-border");
 });
 
 
