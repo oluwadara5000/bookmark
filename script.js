@@ -33,6 +33,8 @@ const showClickMobile = document.getElementById("show-click-mobile");
 const showSearchMobile = document.getElementById("show-search-mobile");
 const showShareMobile = document.getElementById("show-share-mobile");
 
+const backgroundInverted = document.getElementById("background-inverted");
+
 showClick.classList.add("add-border");
 showClickMobile.classList.add("add-border");
 search.style.display = "none";
@@ -82,6 +84,7 @@ showClickMobile.addEventListener("click", function () {
   showClickMobile.classList.add("add-border");
   showSearchMobile.classList.remove("add-border");
   showShareMobile.classList.remove("add-border");
+  backgroundInverted.style.top = "275px";
 });
 
 showSearchMobile.addEventListener("click", function () {
@@ -91,6 +94,7 @@ showSearchMobile.addEventListener("click", function () {
   showClickMobile.classList.remove("add-border");
   showSearchMobile.classList.add("add-border");
   showShareMobile.classList.remove("add-border");
+  backgroundInverted.style.top = "330px"
 });
 
 showShareMobile.addEventListener("click", function () {
@@ -100,6 +104,7 @@ showShareMobile.addEventListener("click", function () {
   showClickMobile.classList.remove("add-border");
   showSearchMobile.classList.remove("add-border");
   showShareMobile.classList.add("add-border");
+  backgroundInverted.style.top = "330px";
 });
 
 

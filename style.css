@@ -548,6 +548,7 @@ header button{
   flex-direction: column-reverse;
   padding: 0;
   gap: 30px;
+  margin-bottom: 155px;
 }
 
 .first-div-content{
@@ -586,6 +587,12 @@ header button{
   top: 60px;
 }
 
+.background-inverted{
+  width: 290px;
+  height: 200px;
+  top: 275px;
+}
+
 .second-div-content{
   width: 100%;
   padding: 0 35px;
@@ -607,6 +614,8 @@ font-size: 15px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 155px;
+  position: relative;
 }
 
 .second-div-nav-mobile{
@@ -632,7 +641,7 @@ width: inherit;
 .features-container-div-mobile{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .features-container-mobile{
@@ -646,6 +655,7 @@ width: inherit;
 
 .features-container-div-image-mobile{
   width: 100%;
+  z-index: 100;
 }
 
 .features-container-div-image-mobile img{
@@ -662,6 +672,92 @@ width: inherit;
   font-weight: 500;
   color: hsl(229, 8%, 60%);
   line-height: 25px;
+}
+
+.third-div-content{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.third-div-content h1{
+  font-size: 25px;
+}
+
+.third-div-container{
+  width: 100%;
+  flex-direction: column;
+  height: max-content;
+  padding: 0 45px;
+  margin-bottom: 140px;
+}
+.fourth-div-content{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.fourth-div-content h1{
+  font-size: 25px;
+}
+
+.fourth-div-content p{
+  font-size: 14px;
+}
+
+.collapsible-container{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.collapsible h1{
+  font-size: 14px;
+}
+
+.collapsible p{
+  text-align: left;
+}
+
+.fifth-div{
+  padding: 65px 30px 40px 30px;
+}
+
+.fifth-div p{
+  font-size: 12px;
+}
+
+.fifth-div h1{
+  width: 100%;
+  font-size: 22px;
+}
+
+.fifth-div div{
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+form{
+  width: 100%;
+}
+
+.fifth-div button{
+  width: 100%;
+  padding: 15px 0;
+}
+
+footer{
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer ul{
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.logo-list-container{
+  flex-direction: column;
+  gap: 45px;
 }
 }
 
@@ -691,6 +787,259 @@ width: inherit;
 /* FOR SCREENS FROM 375px TO 767px */
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  section{
+    width: 98%;
+  }
+
+  header{
+padding: 0 30px;
+}
+
+header ul{
+  display: none;
+}
+
+header button{
+  display: none;
+}
+
+.nav-list i{
+  display: block;
+}
+
+.first-div{
+  flex-direction: column-reverse;
+  padding: 0;
+  gap: 30px;
+  margin-bottom: 155px;
+}
+
+.first-div-content{
+  width: 100%;
+  text-align: center;
+  padding: 0 45px;
+}
+
+.first-div h1{
+  font-size: 25px;
+}
+
+.first-div p{
+  font-size: 14px;
+}
+
+.first-div-button{
+  justify-content: center;
+}
+
+.first-div-button button{
+  padding: 14px 20px;
+}
+
+.first-div-image{
+  width: 100%;
+}
+
+.first-div-image img{
+  width: inherit;
+}
+
+/* .background{
+  width: 330px;
+  height: 250px;
+  top: 60px;
+}
+
+.background-inverted{
+  width: 290px;
+  height: 200px;
+  top: 275px;
+} */
+
+.second-div-content{
+  width: 100%;
+  padding: 0 35px;
+}
+
+.second-div-content h1{
+  font-size: 25px;
+}
+
+.second-div-content p{
+font-size: 15px;
+}
+
+.second-div-tab{
+  display: none;
+}
+
+.second-div-tab-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 155px;
+  position: relative;
+}
+
+.second-div-nav-mobile{
+  text-align: center;
+  padding: 0 30px;
+}
+
+.second-div-nav-mobile ul{
+width: inherit;
+}
+
+.second-div-nav-mobile ul > li{
+  padding: 20px 0;
+  list-style-type: none;
+  width: max-content;
+  margin: auto;
+}
+
+.second-div-nav-mobile ul > li:hover{
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+
+.features-container-div-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.features-container-mobile{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.features-container-writeup-mobile{
+  text-align: center;
+}
+
+.features-container-div-image-mobile{
+  width: 100%;
+  z-index: 100;
+}
+
+.features-container-div-image-mobile img{
+  width: inherit;
+}
+
+.features-container-writeup-mobile h1{
+  margin-bottom: 15px;
+  color: hsl(229, 31%, 21%);
+}
+
+.features-container-writeup-mobile p{
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(229, 8%, 60%);
+  line-height: 25px;
+}
+
+.third-div-content{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.third-div-content h1{
+  font-size: 25px;
+}
+
+.third-div-container{
+  width: 100%;
+  flex-direction: column;
+  height: max-content;
+  padding: 0 45px;
+  margin-bottom: 140px;
+}
+
+.third-div-card-container:nth-child(1){
+  align-self: center;
+}
+
+.third-div-card-container:nth-child(2){
+  align-self: center;
+}
+
+.third-div-card-container:nth-child(3){
+align-self: center;
+}
+
+.fourth-div-content{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.fourth-div-content h1{
+  font-size: 25px;
+}
+
+.fourth-div-content p{
+  font-size: 14px;
+}
+
+.collapsible-container{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.collapsible h1{
+  font-size: 14px;
+}
+
+.collapsible p{
+  text-align: left;
+}
+
+.fifth-div{
+  padding: 65px 30px 40px 30px;
+}
+
+.fifth-div p{
+  font-size: 12px;
+}
+
+.fifth-div h1{
+  width: 100%;
+  font-size: 22px;
+}
+
+.fifth-div div{
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+form{
+  width: 100%;
+}
+
+.fifth-div button{
+  width: 315px;
+  padding: 15px 0;
+  margin: auto;
+}
+
+footer{
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer ul{
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.logo-list-container{
+  flex-direction: column;
+  gap: 45px;
+}
+
+input{
+  width: 315px;
+}
 }
 
 
