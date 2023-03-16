@@ -35,6 +35,12 @@ const showShareMobile = document.getElementById("show-share-mobile");
 
 const backgroundInverted = document.getElementById("background-inverted");
 
+const openPanel = document.getElementById("open");
+const closePanel = document.getElementById("close");
+const panel = document.getElementById("panel");
+const panelHeaderList = document.getElementById("panel-header-list");
+const panelIcons = document.getElementById("panel-icons");
+
 showClick.classList.add("add-border");
 showClickMobile.classList.add("add-border");
 search.style.display = "none";
@@ -45,6 +51,8 @@ hideBookmark.style.display = "none";
 hideBrowser.style.display = "none";
 hideApp.style.display = "none";
 hideChromium.style.display = "none";
+panelHeaderList.style.display = "none"
+panelIcons.style.display = "none";
 
 showClick.addEventListener("click", function () {
   search.style.display = "none";
@@ -191,4 +199,21 @@ hideChromium.addEventListener("click", function () {
   chromiumParagraph.style.display = "none";
   hideChromium.style.display = "none";
   showChromium.style.display = "block";
+});
+
+
+
+openPanel.addEventListener("click", function () {
+  panelHeaderList.style.display = "block";
+  panelIcons.style.display = "flex";
+  panel.style.height = "765px"
+  panel.style.padding = "40px 30px"
+});
+
+
+closePanel.addEventListener("click", function () {
+  panelHeaderList.style.display = "none";
+  panelIcons.style.display = "none";
+  panel.style.height = "0";
+  panel.style.padding = "0";
 });
