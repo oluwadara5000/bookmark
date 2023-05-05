@@ -46,7 +46,6 @@ Users should be able to:
 
 ### What I learned
 
-
 ```css
 .third-div-card-container:nth-child(1) {
   align-self: flex-start;
@@ -62,6 +61,5 @@ Users should be able to:
 ```
 
 ## Author
-
 - Website - [Odejobi Oluwadara](https://github.com/oluwadara5000)
 - Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
